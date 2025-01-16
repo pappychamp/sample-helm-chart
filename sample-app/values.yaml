@@ -6,14 +6,14 @@
 replicaCount: 1
 # This sets the container image more information can be found here: https://kubernetes.io/docs/concepts/containers/images/
 image:
-  repository: 202111032110/sample-app
+  repository: ""
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 80f879730de184aea14eb678a737077bdb6c33f0
+  tag: ""
 # This is for the secretes for pulling an image from a private repository more information can be found here: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
 imagePullSecrets:
-  - name: dockerhub-secret
+  - name: ""
 # This is to override the chart name.
 nameOverride: ""
 fullnameOverride: ""
